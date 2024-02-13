@@ -28,9 +28,9 @@ jobs:
         run: |
           # Run commands to build and push Docker images
           docker build -t candycrush .
-          docker tag candycrush taji9876/candycrush:latest
+          docker tag candycrush taji9876/candycrush:latest1
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
-          docker push taji9876/candycrush:latest
+          docker push taji9876/candycrush:latest1
         env:
           DOCKER_CLI_ACI: 1 
 
